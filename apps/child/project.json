@@ -54,13 +54,13 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@nx/angular:webpack-dev-server",
+      "executor": "@nx/angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "child:build:production"
+          "buildTarget": "child:build:production"
         },
         "development": {
-          "browserTarget": "child:build:development"
+          "buildTarget": "child:build:development"
         }
       },
       "defaultConfiguration": "development",
@@ -72,7 +72,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "child:build"
+        "buildTarget": "child:build"
       }
     },
     "lint": {
@@ -90,16 +90,16 @@
       "executor": "@nx/web:file-server",
       "defaultConfiguration": "production",
       "options": {
-        "browserTarget": "child:build",
+        "buildTarget": "child:build",
         "port": 4201,
         "watch": false
       },
       "configurations": {
         "development": {
-          "browserTarget": "child:build:development"
+          "buildTarget": "child:build:development"
         },
         "production": {
-          "browserTarget": "child:build:production"
+          "buildTarget": "child:build:production"
         }
       }
     }
