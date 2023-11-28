@@ -14,6 +14,7 @@
     "@angular/platform-browser-dynamic": "~17.0.0",
     "@angular/router": "~17.0.0",
     "@nx/angular": "17.2.0-beta.8",
+    "ng-zorro-antd": "^17.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.0"
@@ -32,6 +33,8 @@
     "@nx/eslint-plugin": "17.2.0-beta.8",
     "@nx/jest": "17.2.0-beta.8",
     "@nx/js": "17.2.0-beta.8",
+    "@nx/web": "17.2.0-beta.8",
+    "@nx/webpack": "17.2.0-beta.8",
     "@nx/workspace": "17.2.0-beta.8",
     "@schematics/angular": "~17.0.0",
     "@swc-node/register": "~1.6.7",

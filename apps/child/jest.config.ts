@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'gy-test',
+  displayName: 'child',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/gy-test',
+  coverageDirectory: '../../coverage/apps/child',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
