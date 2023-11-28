@@ -3,7 +3,10 @@ import { ValueService } from '@gy-test/value';
 
 @Component({
   selector: 'gy-test-nx-welcome',
-  template: ` host::{{ valueService.value }} `,
+  template: `
+    <span nz-icon nzType="bug" nzTheme="outline"></span>
+    host::{{ valueService.value }}
+  `,
   styles: [],
   encapsulation: ViewEncapsulation.None,
 })
