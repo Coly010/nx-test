@@ -1,8 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ValueService } from 'my-value';
 
-import { NzIconService } from 'ng-zorro-antd/icon';
-
 @Component({
   selector: 'gy-test-nx-welcome',
   template: `
@@ -12,11 +10,7 @@ import { NzIconService } from 'ng-zorro-antd/icon';
   encapsulation: ViewEncapsulation.None,
 })
 export class NxWelcomeComponent {
-  constructor(
-    public valueService: ValueService,
-    private nzIconService: NzIconService
-  ) {
-    console.log('child icon service::', this.nzIconService);
+  constructor(public valueService: ValueService) {
     console.log('child valueService::', this.valueService);
   }
 }
