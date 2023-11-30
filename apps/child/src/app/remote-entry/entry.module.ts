@@ -5,11 +5,14 @@ import { RouterModule } from '@angular/router';
 import { RemoteEntryComponent } from './entry.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { remoteRoutes } from './entry.routes';
-import { NzIconModule } from 'ng-zorro-antd/icon';
+import { ValueModule } from 'my-value';
 
 @NgModule({
   declarations: [RemoteEntryComponent, NxWelcomeComponent],
-  imports: [CommonModule, NzIconModule, RouterModule.forChild(remoteRoutes)],
-  providers: [],
+  imports: [
+    CommonModule,
+    ValueModule,
+    RouterModule.forChild(remoteRoutes),
+  ],
 })
 export class RemoteEntryModule {}

@@ -4,15 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
-import { ValueService } from '@gy-test/value';
-import { NzIconModule, NzIconService } from 'ng-zorro-antd/icon';
+import { ValueService } from 'my-value';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
-    NzIconModule,
     RouterModule.forRoot(
       [
         {
@@ -30,12 +28,8 @@ import { NzIconModule, NzIconService } from 'ng-zorro-antd/icon';
   bootstrap: [AppComponent],
 })
 export class AppModule {
-  constructor(
-    private valueService: ValueService,
-    private nzIconService: NzIconService
-  ) {
-    valueService.increment();
-    this.nzIconService.changeAssetsSource(
+  constructor(private valueService: ValueService) {
+    this.valueService.changeAssetsSource(
       'https://winkong-frontend.oss-cn-qingdao.aliyuncs.com/ng-zorro-icons'
     );
   }

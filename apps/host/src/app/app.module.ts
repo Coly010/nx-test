@@ -1,34 +1,21 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
-import { NxWelcomeComponent } from './nx-welcome.component';
-import { HttpClientModule } from '@angular/common/http';
-import { ValueService } from '@gy-test/value';
-import { NzIconModule, NzIconService } from 'ng-zorro-antd/icon';
+import { ValueService } from 'my-value';
+
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    NzIconModule,
-    RouterModule.forRoot(appRoutes),
-  ],
-  providers: [],
+  declarations: [AppComponent],
+  imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(appRoutes)],
   bootstrap: [AppComponent],
 })
 export class AppModule {
-  constructor(
-    private valueService: ValueService,
-    private nzIconService: NzIconService
-  ) {
-    valueService.increment();
-    valueService.increment();
-    valueService.increment();
-
-    this.nzIconService.changeAssetsSource(
-      'https://winkong-frontend.oss-cn-qingdao.aliyuncs.com/ng-zorro-icons'
+  constructor(private valueService: ValueService) {
+    valueService.changeAssetsSource(
+      'https://winkong-frontend.oss-cn-qingdao.aliyuncs.com/ng-zorro-icons/'
     );
   }
 }

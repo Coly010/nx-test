@@ -1,7 +1,7 @@
 {
-  "name": "value",
+  "name": "base",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/value/src",
+  "sourceRoot": "libs/base/src",
   "prefix": "gy-test",
   "tags": [],
   "projectType": "library",
@@ -10,14 +10,14 @@
       "executor": "@nx/angular:package",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "options": {
-        "project": "libs/value/ng-package.json"
+        "project": "libs/base/ng-package.json"
       },
       "configurations": {
         "production": {
-          "tsConfig": "libs/value/tsconfig.lib.prod.json"
+          "tsConfig": "libs/base/tsconfig.lib.prod.json"
         },
         "development": {
-          "tsConfig": "libs/value/tsconfig.lib.json"
+          "tsConfig": "libs/base/tsconfig.lib.json"
         }
       },
       "defaultConfiguration": "production"

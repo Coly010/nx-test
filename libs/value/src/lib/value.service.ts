@@ -1,12 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Base } from './base';
+import { BaseService } from 'my-base';
 
 @Injectable({ providedIn: 'root' })
-export class ValueService extends Base {
+export class ValueService extends BaseService {
   constructor() {
     super();
-  }
-  add() {
-    this.increment();
   }
 }
