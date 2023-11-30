@@ -8,7 +8,7 @@ export const appRoutes: Route[] = [
       loadRemoteModule('child', './Module').then((m) => m.RemoteEntryModule),
   },
   {
-    path: 'cc',
-    loadChildren: () => import('./cc/cc.module').then((m) => m.CcModule),
+    path: 'lazy',
+    loadChildren: () => import('./lazy/lazy.module').then((m) => m.CcModule),
   },
 ];

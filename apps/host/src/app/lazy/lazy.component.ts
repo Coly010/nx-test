@@ -2,10 +2,9 @@ import { Component } from '@angular/core';
 import { ValueService } from 'my-value';
 
 @Component({
-  selector: 'gy-test-cc',
-  templateUrl: './cc.component.html',
-  styleUrl: './cc.component.less',
+  selector: 'nx-test-lazy',
+  template: `host value:: {{ valueService.assetsUrlRoot }}`,
 })
-export class CcComponent {
+export class LazyComponent {
   constructor(public valueService: ValueService) {}
 }

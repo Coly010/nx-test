@@ -13,7 +13,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "gyTest",
+            "prefix": "nxTest",
             "style": "camelCase"
           }
         ],
@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "gy-test",
+            "prefix": "nx-test",
             "style": "kebab-case"
           }
         ]
