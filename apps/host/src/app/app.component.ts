@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'gy-test-root',
+  selector: 'nx-test-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less'],
 })

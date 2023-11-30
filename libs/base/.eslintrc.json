@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "gy-test",
+            "prefix": "nx-test",
             "style": "kebab-case"
           }
         ]

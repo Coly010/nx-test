@@ -2,7 +2,7 @@
   "name": "child",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "gy-test",
+  "prefix": "nx-test",
   "sourceRoot": "apps/child/src",
   "tags": [],
   "targets": {

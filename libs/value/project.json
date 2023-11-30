@@ -2,7 +2,7 @@
   "name": "value",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/value/src",
-  "prefix": "gy-test",
+  "prefix": "nx-test",
   "tags": [],
   "projectType": "library",
   "targets": {

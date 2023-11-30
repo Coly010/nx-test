@@ -2,7 +2,7 @@
   "name": "base",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/base/src",
-  "prefix": "gy-test",
+  "prefix": "nx-test",
   "tags": [],
   "projectType": "library",
   "targets": {
