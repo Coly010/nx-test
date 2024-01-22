@@ -9,6 +9,6 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'lazy',
-    loadChildren: () => import('./lazy/lazy.module').then((m) => m.CcModule),
+    loadChildren: () => import('./lazy/lazy.module').then((m) => m.LazyModule),
   },
 ];
