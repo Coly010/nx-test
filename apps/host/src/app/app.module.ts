@@ -14,6 +14,6 @@ import { ValueService } from 'my-value';
 })
 export class AppModule {
   constructor(private valueService: ValueService) {
-    valueService.changeAssetsSource('https://nx.dev');
+    this.valueService.changeAssetsSource('https://nx.dev');
   }
 }
