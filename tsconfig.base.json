@@ -15,10 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      // "my-base": ["libs/base/src/index.ts"],
-      // "my-value": ["libs/value/src/index.ts"],
       "my-base": ["dist/libs/base"],
-      "my-value": ["dist/libs/value"],
+      "my-value": ["dist/libs/value"]
     }
   },
   "exclude": ["node_modules", "tmp"]
