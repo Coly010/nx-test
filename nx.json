@@ -27,6 +27,13 @@
         "{workspaceRoot}/.eslintignore",
         "{workspaceRoot}/eslint.config.js"
       ]
+    },
+    "@nx/angular:webpack-browser": {
+      "inputs": [
+        {
+          "env": "NX_MF_DEV_SERVER_STATIC_REMOTES"
+        }
+      ]
     }
   },
   "namedInputs": {
@@ -57,5 +64,6 @@
     "@nx/angular:component": {
       "style": "less"
     }
-  }
+  },
+  "nxCloudAccessToken": "NWI3NWE2YTgtNjI2My00MmI4LTg0N2EtYzY0YzNjNTRlYjlhfHJlYWQtd3JpdGU="
 }
