@@ -29,8 +29,6 @@ import { ValueService } from 'my-value';
 })
 export class AppModule {
   constructor(private valueService: ValueService) {
-    this.valueService.changeAssetsSource(
-      'https://winkong-frontend.oss-cn-qingdao.aliyuncs.com/ng-zorro-icons'
-    );
+    this.valueService.changeAssetsSource('https://nx.dev/');
   }
 }

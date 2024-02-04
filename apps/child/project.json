@@ -54,13 +54,13 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@nx/angular:dev-server",
+      "executor": "@nx/angular:webpack-dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "child:build:production"
+          "browserTarget": "child:build:production"
         },
         "development": {
-          "buildTarget": "child:build:development"
+          "browserTarget": "child:build:development"
         }
       },
       "defaultConfiguration": "development",
