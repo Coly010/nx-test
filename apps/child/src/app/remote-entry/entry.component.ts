@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { ValueService } from 'my-value';
+import { BaseService } from 'my-base';
 
 @Component({
   selector: 'nx-test-child-entry',
   template: `remote child value::{{ valueService.assetsUrlRoot }}`,
 })
 export class RemoteEntryComponent {
-  constructor(public valueService: ValueService) {
+  constructor(public valueService: BaseService) {
     console.log('child valueService::', this.valueService);
   }
 }

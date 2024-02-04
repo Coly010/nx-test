@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
-import { ValueService } from 'my-value';
+import { BaseService } from 'my-base';
 
 @NgModule({
   declarations: [AppComponent],
@@ -28,7 +28,7 @@ import { ValueService } from 'my-value';
   bootstrap: [AppComponent],
 })
 export class AppModule {
-  constructor(private valueService: ValueService) {
+  constructor(private valueService: BaseService) {
     this.valueService.changeAssetsSource('https://nx.dev/');
   }
 }

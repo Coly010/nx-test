@@ -15,11 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      // "my-base": ["libs/base/src/index.ts"],
-      // "my-value": ["libs/value/src/index.ts"],
       "my-base": ["dist/libs/base"],
-      "my-value": ["dist/libs/value"],
-      "child/Module": ["apps/child/src/app/remote-entry/entry.module.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
