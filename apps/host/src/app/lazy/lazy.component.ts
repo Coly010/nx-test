@@ -6,5 +6,7 @@ import { BaseService } from 'my-base';
   template: `host value:: {{ valueService.assetsUrlRoot }}`,
 })
 export class LazyComponent {
-  constructor(public valueService: BaseService) {}
+  constructor(public valueService: BaseService) {
+    console.log('lazy:', valueService);
+  }
 }
