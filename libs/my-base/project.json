@@ -1,7 +1,7 @@
 {
-  "name": "base",
+  "name": "my-base",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/base/src",
+  "sourceRoot": "libs/my-base/src",
   "prefix": "nx-test",
   "tags": [],
   "projectType": "library",
@@ -10,14 +10,14 @@
       "executor": "@nx/angular:package",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "options": {
-        "project": "libs/base/ng-package.json"
+        "project": "libs/my-base/ng-package.json"
       },
       "configurations": {
         "production": {
-          "tsConfig": "libs/base/tsconfig.lib.prod.json"
+          "tsConfig": "libs/my-base/tsconfig.lib.prod.json"
         },
         "development": {
-          "tsConfig": "libs/base/tsconfig.lib.json"
+          "tsConfig": "libs/my-base/tsconfig.lib.json"
         }
       },
       "defaultConfiguration": "production"

@@ -15,8 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "my-base": ["dist/libs/base"],
-      "my-value": ["dist/libs/value"]
+      // "my-base": ["dist/libs/base"],
     }
   },
   "exclude": ["node_modules", "tmp"]

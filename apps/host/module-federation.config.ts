@@ -15,6 +15,10 @@ const config: ModuleFederationConfig = {
    *
    */
   remotes: [],
+  shared: (lib, config) => {
+    console.log(lib)
+    return config;
+  },
 };
 
 export default config;
