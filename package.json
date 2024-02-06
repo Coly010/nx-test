@@ -14,7 +14,7 @@
     "@angular/platform-browser-dynamic": "17.1.1",
     "@angular/router": "17.1.1",
     "@nx/angular": "18.0.0",
-    "my-base": "file:node_modules/my-base",
+    "my-base": "file:dist/libs/my-base",
     "ng-zorro-antd-extension": "^17.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
